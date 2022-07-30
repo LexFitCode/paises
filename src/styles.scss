@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #e9ebef;
+}
+
+.countrie-container{
+    display: flex;
+    border: solid 2px black;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #ffffff;
+}
+.countrie-container-general{
+    padding: 10px;
+}
+.countrie-container-image{
+    display: flex;
+    border: solid 2px black;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+.countrie-container-name {
+    max-width: 150px;
+    text-align: center;
+}
+.countrie-container-data{
+    display: flex;
+    border: solid 2px black;
+    border-radius: 5px;
+    margin: 10px;
+}
+.countrie-container-details{
+    padding: 10px;
+}
+img{
+    width: 150px;
+    border-radius: 10px;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+button{
+    border-style: none;
+    background-color: green;
+    border-radius: 10px;
+    height: 30px;
+    color: white;
+
+}
+
+.search-container{
+    display: flex;
+    justify-content: space-around;
+    input{
+        width: 60%;
+    }
+    button{
+        width: 30%;
+    }
+}
+
+@media (min-width: 420px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    }
+    .countrie-container{
+        max-width: 360px;
+    }
+  }

@@ -1,0 +1,22 @@
+<div class="container">
+
+    <div *ngFor=" let countrie of countrie" class="countrie-container">
+        <section class="countrie-container-general">
+            <img src={{countrie.flags.png}} alt={{countrie.name.official}}>
+            <p class="countrie-container-name">{{ countrie.name.official }}</p>
+        </section>
+        <section class="countrie-container-details">
+            <p> <span>Capital: </span> {{ countrie.capital }}</p>
+            <p> <span>Region: </span> {{ countrie.region }}</p>
+            <p> <span>Subregion: </span> {{ countrie.subregion }}</p>
+            <a href={{countrie.maps.googleMaps}}>Ubicación</a>
+        </section>
+    </div>
+    <div *ngIf="error">
+        {{error}}
+    </div>
+</div>
+<div class="button-container">
+
+    <button (click)="inicio()">Regresa a la página principal</button>
+</div>

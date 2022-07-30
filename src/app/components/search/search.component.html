@@ -1,0 +1,9 @@
+<div class="search-container">
+    <input
+    #inputSearch
+    autofocus
+    type="text"
+    placeholder="Search..." />
+    <button (click)="search(inputSearch.value)"
+    [disabled]=""> Search </button>
+</div>
